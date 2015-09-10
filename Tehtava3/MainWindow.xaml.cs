@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,29 +21,21 @@ namespace Tehtava3
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<Pelaaja> pelaajat = new List<Pelaaja>();
+        ObservableCollection<Pelaaja> pelaajat = new ObservableCollection<Pelaaja>();
+        int hinta;
 
         public MainWindow()
         {
             InitializeComponent();
+            listBox.ItemsSource = pelaajat;
+            listBox.DisplayMemberPath = "Kokonimi";
         }
 
         private void buttonUusi_Click(object sender, RoutedEventArgs e)
-        {
-            int hinta;
-
-            if(textBoxEtunimi.Text == "" || textBoxSukunimi.Text == "" || (!int.TryParse(textBoxSiirtohinta.Text, out hinta)))
-            {
-                MessageBox.Show("Values missing!", "Error");
-            }
-            else if(isValueDublicate(textBoxEtunimi.Text + " " + textBoxSukunimi.Text + ", " + comboBoxSeura.Text))
-            {
-                MessageBox.Show("Duplicate value!", "Error");
-            }
-            else
+        { 
+            if (validateFields())
             {
                 pelaajat.Add(new Pelaaja(textBoxEtunimi.Text, textBoxSukunimi.Text, comboBoxSeura.Text, hinta));
-                listBox.Items.Add(pelaajat.Last().Kokonimi);
             }
         }
 
@@ -53,29 +46,49 @@ namespace Tehtava3
 
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            for(int i = 0; i < pelaajat.Count; i++)
-            {
-                if(listBox.SelectedItem.ToString().Equals(pelaajat[i].Kokonimi, StringComparison.Ordinal))
-                {
-                    textBoxEtunimi.Text = pelaajat[i].Etunimi;
-                    textBoxSukunimi.Text = pelaajat[i].Sukunimi;
-                    textBoxSiirtohinta.Text = pelaajat[i].Siirtohinta.ToString();
-                    comboBoxSeura.Text = pelaajat[i].Seura;
-                }
-            }
+            Pelaaja temp = (Pelaaja)listBox.SelectedItem;
+            textBoxEtunimi.Text = temp.Etunimi;
+            textBoxSukunimi.Text = temp.Sukunimi;
+            textBoxSiirtohinta.Text = temp.Siirtohinta.ToString();
+            comboBoxSeura.Text = temp.Seura;
 
         }
 
-        private Boolean isValueDublicate(String value)
+        private Boolean isValueDublicate(String kokonimi)
         {
             for(int i = 0; i < pelaajat.Count; i++)
             {
-                if (value.Equals(pelaajat[i].Kokonimi, StringComparison.Ordinal))
+                if (kokonimi.Equals(pelaajat[i].Kokonimi, StringComparison.Ordinal))
                 {
                     return true;
                 }
             }
             return false;
+        }
+
+        private Boolean validateFields()
+        {
+            if (textBoxEtunimi.Text == "" || textBoxSukunimi.Text == "" || (!int.TryParse(textBoxSiirtohinta.Text, out hinta)))
+            {
+                MessageBox.Show("Values missing!", "Error");
+                return false;
+            }
+            else if (isValueDublicate(textBoxEtunimi.Text + " " + textBoxSukunimi.Text + ", " + comboBoxSeura.Text))
+            {
+                MessageBox.Show("Duplicate value!", "Error");
+                return false;
+            }
+            return true;
+        }
+
+        private void buttonTallenna_Click(object sender, RoutedEventArgs e)
+        {
+            Pelaaja temp = (Pelaaja)listBox.SelectedItem;
+            if (validateFields())
+            {
+                temp.ChangeValues(textBoxEtunimi.Text, textBoxSukunimi.Text, comboBoxSeura.Text, hinta);
+                pelaajat[listBox.Items.IndexOf(listBox.SelectedItem)].ChangeValues(textBoxEtunimi.Text, textBoxSukunimi.Text, comboBoxSeura.Text, hinta);
+            }
         }
     }
 }

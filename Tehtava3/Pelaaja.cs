@@ -8,21 +8,30 @@ namespace Tehtava3
 {
     class Pelaaja
     {
-
-        
-        public String Kokonimi { get; }
-        public String  Etunimi { get; }
-        public String Sukunimi { get; }
-        public String Seura { get; }
-        public int Siirtohinta { get; }
+        public String  Etunimi { get; set; }
+        public String Sukunimi { get; set; }
+        public String Seura { get; set; }
+        public int Siirtohinta { get; set; }
+        public String Kokonimi
+        {
+            get {return Etunimi + " " + Sukunimi + ", " + Seura; }
+        }
 
         public Pelaaja(String etunimi, String sukunimi, String seura, int siirtohinta)
         {
             this.Etunimi = etunimi;
             this.Sukunimi = sukunimi;
             this.Seura = seura;
-            this.Kokonimi = Etunimi + " " + Sukunimi + ", " + Seura;
             this.Siirtohinta = siirtohinta;
         }
+
+        public void ChangeValues(String etunimi, String sukunimi, String seura, int siirtohinta)
+        {
+            this.Etunimi = etunimi;
+            this.Sukunimi = sukunimi;
+            this.Seura = seura;
+            this.Siirtohinta = siirtohinta;
+        }
+
     }
 }
