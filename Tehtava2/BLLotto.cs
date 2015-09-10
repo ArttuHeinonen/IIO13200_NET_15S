@@ -12,6 +12,7 @@ namespace Tehtava2
         private int SuurinNro, StarsNro;
         private int NumeroLkm;
         private Boolean UseStars = false;
+        private List<int> luvut = new List<int>();
 
         public Lotto(int suurinNro, int numeroLkm, Boolean useStars)
         {
@@ -23,18 +24,17 @@ namespace Tehtava2
 
         public List<int> ArvoRivi(Random rnd)
         {
-            List<int> luvut = new List<int>();
 
-            for(int i = 0; i < NumeroLkm; i++)
+            for (int i = 0; i < NumeroLkm; i++)
             {
-                luvut.Add(rnd.Next(1, SuurinNro + 1));
+                LisaaLuku(SuurinNro, i, rnd);
             }
 
             if (UseStars)
             {
                 for (int i = 0; i < 2; i++)
                 {
-                    luvut.Add(rnd.Next(1, StarsNro + 1));
+                    LisaaLuku(StarsNro, i, rnd);
                 }
             }
 
@@ -50,6 +50,30 @@ namespace Tehtava2
             List<int> luvut = new List<int>();
 
             return luvut;
+        }
+
+        private Boolean OnkoNumeroJoArvottu(int luku)
+        {
+            for (int i = 0; i < luvut.Count; i++)
+            {
+                if (luku == luvut[i])
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private void LisaaLuku(int SuurinNro, int i, Random rnd)
+        {
+            luvut.Add(rnd.Next(1, SuurinNro + 1));
+            if (OnkoNumeroJoArvottu(luvut[i]))
+            {
+                while (!OnkoNumeroJoArvottu(luvut[i]))
+                {
+                    luvut[i] = rnd.Next(1, SuurinNro + 1);
+                }
+            }
         }
     }
 }
