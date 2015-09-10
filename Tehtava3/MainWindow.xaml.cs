@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,7 @@ namespace Tehtava3
     {
         ObservableCollection<Pelaaja> pelaajat = new ObservableCollection<Pelaaja>();
         int hinta;
+        Microsoft.Win32.SaveFileDialog dialog = new Microsoft.Win32.SaveFileDialog();
 
         public MainWindow()
         {
@@ -111,6 +113,26 @@ namespace Tehtava3
             emptyFields();
             pelaajat.Remove(temp);
             listBox.Items.Refresh();
+        }
+
+        private void buttonKirjoita_Click(object sender, RoutedEventArgs e)
+        {
+            dialog.FileName = "Document";
+            dialog.DefaultExt = ".dat";
+            dialog.Filter = "Dat file mon (.dat)|*.dat";
+            Nullable<bool> result = dialog.ShowDialog();
+
+            if (result == true)
+            {
+                string filename = dialog.FileName;
+                using (StreamWriter outfile = new StreamWriter(filename))
+                {
+                    foreach (Pelaaja pelaaja in pelaajat)
+                    {
+                        outfile.Write(pelaaja.Kokonimi);
+                    }
+                }
+            }
         }
     }
 }
