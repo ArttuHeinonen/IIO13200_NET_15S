@@ -26,3 +26,17 @@ E:\JAMK\Vuosi 3\DotNet\IIO13200\Tehtava2\obj\Debug\MainWindow.baml
 E:\JAMK\Vuosi 3\DotNet\IIO13200\Tehtava2\obj\Debug\Tehtava2.g.resources
 E:\JAMK\Vuosi 3\DotNet\IIO13200\Tehtava2\obj\Debug\Tehtava2.Properties.Resources.resources
 E:\JAMK\Vuosi 3\DotNet\IIO13200\Tehtava2\obj\Debug\Tehtava2.csproj.GenerateResource.Cache
+D:\H3425\IIO13200_NET_15S\Tehtava2\bin\Debug\Tehtava2.exe.config
+D:\H3425\IIO13200_NET_15S\Tehtava2\obj\Debug\Tehtava2.exe
+D:\H3425\IIO13200_NET_15S\Tehtava2\obj\Debug\Tehtava2.pdb
+D:\H3425\IIO13200_NET_15S\Tehtava2\bin\Debug\Tehtava2.exe
+D:\H3425\IIO13200_NET_15S\Tehtava2\bin\Debug\Tehtava2.pdb
+D:\H3425\IIO13200_NET_15S\Tehtava2\obj\Debug\Tehtava2.csprojResolveAssemblyReference.cache
+D:\H3425\IIO13200_NET_15S\Tehtava2\obj\Debug\MainWindow.g.cs
+D:\H3425\IIO13200_NET_15S\Tehtava2\obj\Debug\App.g.cs
+D:\H3425\IIO13200_NET_15S\Tehtava2\obj\Debug\Tehtava2_MarkupCompile.cache
+D:\H3425\IIO13200_NET_15S\Tehtava2\obj\Debug\Tehtava2_MarkupCompile.lref
+D:\H3425\IIO13200_NET_15S\Tehtava2\obj\Debug\MainWindow.baml
+D:\H3425\IIO13200_NET_15S\Tehtava2\obj\Debug\Tehtava2.g.resources
+D:\H3425\IIO13200_NET_15S\Tehtava2\obj\Debug\Tehtava2.Properties.Resources.resources
+D:\H3425\IIO13200_NET_15S\Tehtava2\obj\Debug\Tehtava2.csproj.GenerateResource.Cache

@@ -12,3 +12,6 @@ D:\H3425\IIO13200\Tehtava1\obj\Debug\Tehtava1.Properties.Resources.resources
 D:\H3425\IIO13200\Tehtava1\obj\Debug\Tehtava1.csproj.GenerateResource.Cache
 D:\H3425\IIO13200\Tehtava1\obj\Debug\Ikkunat.exe
 D:\H3425\IIO13200\Tehtava1\obj\Debug\Ikkunat.pdb
+D:\H3425\IIO13200_NET_15S\Tehtava1\bin\Debug\Ikkunat.exe.config
+D:\H3425\IIO13200_NET_15S\Tehtava1\obj\Debug\Ikkunat.exe
+D:\H3425\IIO13200_NET_15S\Tehtava1\obj\Debug\Ikkunat.pdb
