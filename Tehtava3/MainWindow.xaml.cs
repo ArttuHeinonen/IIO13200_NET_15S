@@ -47,11 +47,17 @@ namespace Tehtava3
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Pelaaja temp = (Pelaaja)listBox.SelectedItem;
-            textBoxEtunimi.Text = temp.Etunimi;
-            textBoxSukunimi.Text = temp.Sukunimi;
-            textBoxSiirtohinta.Text = temp.Siirtohinta.ToString();
-            comboBoxSeura.Text = temp.Seura;
-
+            try
+            {
+                textBoxEtunimi.Text = temp.Etunimi;
+                textBoxSukunimi.Text = temp.Sukunimi;
+                textBoxSiirtohinta.Text = temp.Siirtohinta.ToString();
+                comboBoxSeura.Text = temp.Seura;
+            }
+            catch
+            {
+                emptyFields();
+            }
         }
 
         private Boolean isValueDublicate(String kokonimi)
@@ -81,14 +87,30 @@ namespace Tehtava3
             return true;
         }
 
+        private void emptyFields()
+        {
+            textBoxEtunimi.Text = "";
+            textBoxSukunimi.Text = "";
+            textBoxSiirtohinta.Text = "";
+            comboBoxSeura.Text = "Blues";
+        }
+
         private void buttonTallenna_Click(object sender, RoutedEventArgs e)
         {
-            Pelaaja temp = (Pelaaja)listBox.SelectedItem;
+            int index = listBox.Items.IndexOf(listBox.SelectedItem);
             if (validateFields())
             {
-                temp.ChangeValues(textBoxEtunimi.Text, textBoxSukunimi.Text, comboBoxSeura.Text, hinta);
-                pelaajat[listBox.Items.IndexOf(listBox.SelectedItem)].ChangeValues(textBoxEtunimi.Text, textBoxSukunimi.Text, comboBoxSeura.Text, hinta);
+                pelaajat[index].ChangeValues(textBoxEtunimi.Text, textBoxSukunimi.Text, comboBoxSeura.Text, hinta);
+                listBox.Items.Refresh();
             }
+        }
+
+        private void buttonPoista_Click(object sender, RoutedEventArgs e)
+        {
+            Pelaaja temp = (Pelaaja)listBox.SelectedItem;
+            emptyFields();
+            pelaajat.Remove(temp);
+            listBox.Items.Refresh();
         }
     }
 }

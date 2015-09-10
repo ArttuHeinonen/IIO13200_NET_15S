@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tehtava3"
         mc:Ignorable="d"
-        Title="Oudot oliot SM-liigassa" Height="225" Width="765" MinWidth="765" MinHeight="225" MaxWidth="765" MaxHeight="225">
+        Title="Oudot oliot SM-liigassa" Height="225" Width="795.907" MinWidth="850" MinHeight="225" MaxWidth="850" MaxHeight="225">
     <Grid>
         <Label x:Name="label" Content="Etunimi" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.501,0.478"/>
         <TextBox x:Name="textBoxEtunimi" HorizontalAlignment="Left" Height="29" Margin="102,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" FontSize="16"/>
@@ -33,7 +33,7 @@
         </ComboBox>
         <Button x:Name="buttonUusi" Content="Luo uusi pelaaja" HorizontalAlignment="Left" Margin="332,12,0,0" VerticalAlignment="Top" Width="150" Height="29" FontSize="16" Click="buttonUusi_Click"/>
         <Button x:Name="buttonTallenna" Content="Tallenna pelaaja" HorizontalAlignment="Left" Margin="332,44,0,0" VerticalAlignment="Top" Width="150" Height="29" FontSize="16" Click="buttonTallenna_Click"/>
-        <Button x:Name="buttonPoista" Content="Poista pelaaja" HorizontalAlignment="Left" Margin="332,80,0,0" VerticalAlignment="Top" Width="150" Height="29" FontSize="16"/>
+        <Button x:Name="buttonPoista" Content="Poista pelaaja" HorizontalAlignment="Left" Margin="332,80,0,0" VerticalAlignment="Top" Width="150" Height="29" FontSize="16" Click="buttonPoista_Click"/>
         <Button x:Name="buttonKirjoita" Content="Kirjoita pelaajat" HorizontalAlignment="Left" Margin="332,114,0,0" VerticalAlignment="Top" Width="150" Height="29" FontSize="16"/>
         <Button x:Name="buttonLopeta" Content="Lopetus" HorizontalAlignment="Left" Margin="332,148,0,0" VerticalAlignment="Top" Width="150" Height="29" FontSize="16" Click="buttonLopeta_Click"/>
         <ListBox x:Name="listBox" Height="165" Margin="492,12,10,0" VerticalAlignment="Top" FontSize="16" SelectionChanged="listBox_SelectionChanged" IsSynchronizedWithCurrentItem="True"/>
