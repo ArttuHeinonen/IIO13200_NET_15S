@@ -1,0 +1,2 @@
+\\storage\homes\h3425\dox\documents\visual studio 2015\Projects\IkkunanpintaAla\IkkunanpintaAla\bin\Debug\IkkunanpintaAla.exe.config
+D:\H3425\IkkunanpintaAla\IkkunanpintaAla\bin\Debug\IkkunanpintaAla.exe.config
