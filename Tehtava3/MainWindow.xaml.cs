@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -31,6 +32,17 @@ namespace Tehtava3
             InitializeComponent();
             listBox.ItemsSource = pelaajat;
             listBox.DisplayMemberPath = "Kokonimi";
+
+            String fileName = ConfigurationManager.AppSettings["filePath"];
+
+            if(fileName != "")
+            {
+                string[] lines = System.IO.File.ReadAllLines(fileName);
+                foreach (string line in lines)
+                {
+                    pelaajat.Add(new Pelaaja(line));
+                }
+            }
         }
 
         private void buttonUusi_Click(object sender, RoutedEventArgs e)
@@ -74,6 +86,11 @@ namespace Tehtava3
                 }
             }
             return false;
+        }
+
+        private void LuePelaaja(String file)
+        {
+
         }
 
         private Boolean validateFields()
@@ -133,15 +150,24 @@ namespace Tehtava3
                 {
                     foreach (Pelaaja pelaaja in pelaajat)
                     {
-                        outfile.WriteLine(pelaaja.Kokonimi);
+                        outfile.WriteLine(pelaaja.Etunimi + ", " + pelaaja.Sukunimi + ", " + pelaaja.Seura + ", " + pelaaja.Siirtohinta);
                     }
                 }
+                UpdateConfig(filename);
                 statusText.Text = "Player saved!";
             }
             else
             {
                 statusText.Text = "Player not saved!";
             }
+        }
+        private void UpdateConfig(String filename)
+        {
+            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            var settings = config.AppSettings.Settings;
+            settings["filePath"].Value = filename;
+            config.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection(config.AppSettings.SectionInformation.Name);
         }
     }
 }

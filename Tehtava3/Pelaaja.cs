@@ -25,6 +25,15 @@ namespace Tehtava3
             this.Siirtohinta = siirtohinta;
         }
 
+        public Pelaaja(String tiedot)
+        {
+            String[] word = tiedot.Split(',');
+            this.Etunimi = word[0];
+            this.Sukunimi = word[1];
+            this.Seura = word[2];
+            this.Siirtohinta = Int32.Parse(word[3]);
+        }
+
         public void ChangeValues(String etunimi, String sukunimi, String seura, int siirtohinta)
         {
             this.Etunimi = etunimi;
