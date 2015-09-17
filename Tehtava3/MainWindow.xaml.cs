@@ -38,11 +38,13 @@ namespace Tehtava3
             if (validateFields())
             {
                 pelaajat.Add(new Pelaaja(textBoxEtunimi.Text, textBoxSukunimi.Text, comboBoxSeura.Text, hinta));
+                statusText.Text = "Player added.";
             }
         }
 
         private void buttonLopeta_Click(object sender, RoutedEventArgs e)
         {
+            statusText.Text = "Closing!";
             this.Close();
         }
 
@@ -78,12 +80,12 @@ namespace Tehtava3
         {
             if (textBoxEtunimi.Text == "" || textBoxSukunimi.Text == "" || (!int.TryParse(textBoxSiirtohinta.Text, out hinta)))
             {
-                MessageBox.Show("Values missing!", "Error");
+                statusText.Text = "Error: Value missing!";
                 return false;
             }
             else if (isValueDublicate(textBoxEtunimi.Text + " " + textBoxSukunimi.Text + ", " + comboBoxSeura.Text))
             {
-                MessageBox.Show("Duplicate value!", "Error");
+                statusText.Text = "Error: Duplicate value!";
                 return false;
             }
             return true;
@@ -105,6 +107,7 @@ namespace Tehtava3
                 pelaajat[index].ChangeValues(textBoxEtunimi.Text, textBoxSukunimi.Text, comboBoxSeura.Text, hinta);
                 listBox.Items.Refresh();
             }
+            statusText.Text = "Player added.";
         }
 
         private void buttonPoista_Click(object sender, RoutedEventArgs e)
@@ -113,6 +116,7 @@ namespace Tehtava3
             emptyFields();
             pelaajat.Remove(temp);
             listBox.Items.Refresh();
+            statusText.Text = "Player deleted.";
         }
 
         private void buttonKirjoita_Click(object sender, RoutedEventArgs e)
@@ -129,9 +133,14 @@ namespace Tehtava3
                 {
                     foreach (Pelaaja pelaaja in pelaajat)
                     {
-                        outfile.Write(pelaaja.Kokonimi);
+                        outfile.WriteLine(pelaaja.Kokonimi);
                     }
                 }
+                statusText.Text = "Player saved!";
+            }
+            else
+            {
+                statusText.Text = "Player not saved!";
             }
         }
     }
