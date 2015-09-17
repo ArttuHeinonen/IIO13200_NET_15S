@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"  standalone="yes"?>
+<viinikellari>
+<wine> <nimi>Fume Blanc</nimi><maa>France</maa><arvio>10</arvio> </wine>
+<wine> <nimi>Côtes du Rhône</nimi><maa>France</maa><arvio>5</arvio> </wine>
+<wine> <nimi>Liebfraumilch</nimi><maa>Germany</maa><arvio>3</arvio> </wine>
+<wine> <nimi>Gato Negro Merlot</nimi><maa>Chile</maa><arvio>5</arvio> </wine>
+<wine> <nimi>Gato Negro Cabernet Sauvignon</nimi><maa>Chile</maa><arvio>8</arvio> </wine>
+<wine> <nimi>Feteasca</nimi><maa>Romanien</maa><arvio>2</arvio> </wine>
+<wine> <nimi>Chateue Láfitte</nimi><maa>France</maa><arvio>10</arvio> </wine>
+<wine> <nimi>Cape Gold Chenin Blanc</nimi><maa>South Africa</maa><arvio>4</arvio> </wine>
+<wine> <nimi>Pearly Bay Cape White</nimi><maa>South Africa</maa><arvio>5</arvio> </wine>
+<wine> <nimi>Leo South African</nimi><maa>South Africa</maa><arvio>5</arvio> </wine>
+<wine> <nimi>Viño Pepita</nimi><maa>Portugal</maa><arvio>12</arvio> </wine>
+<wine> <nimi>Mouton Cadet</nimi><maa>France</maa><arvio>14</arvio> </wine>
+<wine> <nimi>Scharze Katze</nimi><maa>Germany</maa><arvio>7</arvio> </wine>
+<wine> <nimi>Lupo Negro</nimi><maa>Romanien</maa><arvio>4</arvio> </wine>
+<wine> <nimi>Viño Verde</nimi><maa>Portugal</maa><arvio>7</arvio> </wine>
+<wine> <nimi>Egri Bikavér Egervin</nimi><maa>Hungary</maa><arvio>6</arvio> </wine>
+<wine> <nimi>Muskotály</nimi><maa>Hungary</maa><arvio>4</arvio> </wine>
+<wine> <nimi>Jaskan Paras Kilju 2010</nimi><maa>Suomi </maa><arvio>100</arvio> </wine>
+</viinikellari>

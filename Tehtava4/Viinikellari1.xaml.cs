@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,9 +19,15 @@ namespace Tehtava4
     public partial class Viinikellari1 : Window
     {
         public String user { get; set; }
+        private List<String> maat = new List<string>();
         public Viinikellari1()
         {
             InitializeComponent();
+        }
+
+        private void buttonSearch_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -31,5 +31,17 @@ namespace Tehtava4
             vk.user = "Arttu Heinonen";
             vk.ShowDialog();
         }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            ViinikellariDataset vd = new ViinikellariDataset();
+            vd.ShowDialog();
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            ViinikellariXDoc vdoc = new ViinikellariXDoc();
+            vdoc.ShowDialog();
+        }
     }
 }

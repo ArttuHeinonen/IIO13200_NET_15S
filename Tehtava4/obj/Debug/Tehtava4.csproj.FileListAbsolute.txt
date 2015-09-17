@@ -14,3 +14,7 @@ D:\H3425\IIO13200_NET_15S\Tehtava4\obj\Debug\Tehtava4.exe
 D:\H3425\IIO13200_NET_15S\Tehtava4\obj\Debug\Tehtava4.pdb
 D:\H3425\IIO13200_NET_15S\Tehtava4\obj\Debug\Viinikellari1.g.cs
 D:\H3425\IIO13200_NET_15S\Tehtava4\obj\Debug\Viinikellari1.baml
+D:\H3425\IIO13200_NET_15S\Tehtava4\obj\Debug\ViinikellariDataset.g.cs
+D:\H3425\IIO13200_NET_15S\Tehtava4\obj\Debug\ViinikellariDataset.baml
+D:\H3425\IIO13200_NET_15S\Tehtava4\obj\Debug\ViinikellariXDoc.g.cs
+D:\H3425\IIO13200_NET_15S\Tehtava4\obj\Debug\ViinikellariXDoc.baml

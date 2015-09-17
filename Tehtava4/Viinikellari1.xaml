@@ -10,8 +10,14 @@
         <Grid.Resources>
             <XmlDataProvider x:Key="wineData" Source="Viinit1.xml" XPath="viinikellari/wine"/>
         </Grid.Resources>
-        <Button x:Name="buttonSearch" Content="Hae viinit" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="153" FontSize="16"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="168,10,0,0" VerticalAlignment="Top" Width="142" FontSize="16"/>
+        <Button x:Name="buttonSearch" Content="Hae viinit" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="153" FontSize="16" Click="buttonSearch_Click"/>
+        <ComboBox x:Name="comboBox" ItemsSource="{Binding Source={StaticResource wineData}}" HorizontalAlignment="Left" Margin="168,10,0,0" VerticalAlignment="Top" Width="142" FontSize="16">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding  XPath=maa}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
         <DataGrid x:Name="dataGrid" DataContext="{StaticResource wineData}" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,42,10,48" Height="438" VerticalAlignment="Center" BorderThickness="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Viini" Binding="{Binding XPath=nimi}"/>

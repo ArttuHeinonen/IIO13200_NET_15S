@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tehtava4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="157.648" Width="220.548" FontSize="16">
+        Title="MainWindow" Height="212.785" Width="220.548" FontSize="16">
     <Grid>
         <StackPanel>
             <Button x:Name="button1" Content="XmlDataProvider demo" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Width="193" Click="button1_Click"/>
             <Button x:Name="button2" Content="XmlDocument demo" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Width="193"/>
-            <Button x:Name="button3" Content="XDocument demo" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Width="193"/>
+            <Button x:Name="button3" Content="XDocument demo" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Width="193" Click="button3_Click"/>
+            <Button x:Name="button4" Content="DataSet demo" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Width="193" Click="button4_Click"/>
         </StackPanel>
 
     </Grid>
