@@ -42,6 +42,7 @@ namespace IkkunanpintaAla
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex);
                 this.textBox4.Text = "Error";
                 this.textBox5.Text = "Error";
                 this.textBox6.Text = "Error";
