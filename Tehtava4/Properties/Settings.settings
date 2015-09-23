@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="filePath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">viinit1.xml</Value>
+      <Value Profile="(Default)">D:\dev\IIO13200_NET_15S\Tehtava4\viinit1.xml</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -9,7 +9,7 @@
     <Grid>
         <Button x:Name="buttonSearch" Content="Hae viinit" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="153" FontSize="16" Click="buttonSearch_Click"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="168,10,0,0" VerticalAlignment="Top" Width="142" FontSize="16" />
-        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" Margin="10,42,10,48" BorderThickness="1">
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,42,10,48" BorderThickness="1" MinColumnWidth="100" FontSize="16">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Viini"/>
                 <DataGridTextColumn Header="Maa"/>

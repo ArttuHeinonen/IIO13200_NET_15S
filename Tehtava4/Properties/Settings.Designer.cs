@@ -25,7 +25,7 @@ namespace Tehtava4.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("viinit1.xml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\dev\\IIO13200_NET_15S\\Tehtava4\\viinit1.xml")]
         public string filePath {
             get {
                 return ((string)(this["filePath"]));
