@@ -1,0 +1,6 @@
+D:\H3425\IIO13200_NET_15S\ADODataReader\bin\Debug\ADODataReader.exe.config
+D:\H3425\IIO13200_NET_15S\ADODataReader\bin\Debug\ADODataReader.exe
+D:\H3425\IIO13200_NET_15S\ADODataReader\bin\Debug\ADODataReader.pdb
+D:\H3425\IIO13200_NET_15S\ADODataReader\obj\Debug\ADODataReader.csprojResolveAssemblyReference.cache
+D:\H3425\IIO13200_NET_15S\ADODataReader\obj\Debug\ADODataReader.exe
+D:\H3425\IIO13200_NET_15S\ADODataReader\obj\Debug\ADODataReader.pdb

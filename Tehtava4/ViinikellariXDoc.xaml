@@ -11,9 +11,9 @@
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="168,10,0,0" VerticalAlignment="Top" Width="142" FontSize="16" />
         <DataGrid x:Name="dataGrid" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="10,42,10,48" BorderThickness="1" MinColumnWidth="100" FontSize="16">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Viini"/>
-                <DataGridTextColumn Header="Maa"/>
-                <DataGridTextColumn Header="Pisteet"/>
+                <DataGridTextColumn Header="Viini" Binding="{Binding Path=Viini}"/>
+                <DataGridTextColumn Header="Maa" Binding="{Binding Path=Maa}"/>
+                <DataGridTextColumn Header="Pisteet" Binding="{Binding Path=Pisteet}"/>
             </DataGrid.Columns>
         </DataGrid>
         <StatusBar Height="43" Margin="10,0" VerticalAlignment="Bottom" FontSize="16">
