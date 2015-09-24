@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava4", "Tehtava4\Tehtav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADODataReader", "ADODataReader\ADODataReader.csproj", "{8F37C161-5E9A-4A19-A46D-0DE6662E982B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava5", "Tehtava5\Tehtava5.csproj", "{7B5B9F99-3717-4D39-979D-CB6112DF6508}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8F37C161-5E9A-4A19-A46D-0DE6662E982B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F37C161-5E9A-4A19-A46D-0DE6662E982B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F37C161-5E9A-4A19-A46D-0DE6662E982B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B5B9F99-3717-4D39-979D-CB6112DF6508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B5B9F99-3717-4D39-979D-CB6112DF6508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B5B9F99-3717-4D39-979D-CB6112DF6508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B5B9F99-3717-4D39-979D-CB6112DF6508}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
