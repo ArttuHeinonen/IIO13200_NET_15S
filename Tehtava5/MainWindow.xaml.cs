@@ -29,5 +29,15 @@ namespace Tehtava5
         {
             dataGrid.DataContext = Tehtava5.DBDemoxOy.GetDataReal().DefaultView;
         }
+
+        private void buttonGetDataView_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonGetDataSet_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

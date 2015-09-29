@@ -12,3 +12,17 @@ D:\H3425\IIO13200_NET_15S\Tehtava5\obj\Debug\Tehtava5.Properties.Resources.resou
 D:\H3425\IIO13200_NET_15S\Tehtava5\obj\Debug\Tehtava5.csproj.GenerateResource.Cache
 D:\H3425\IIO13200_NET_15S\Tehtava5\obj\Debug\Tehtava5.exe
 D:\H3425\IIO13200_NET_15S\Tehtava5\obj\Debug\Tehtava5.pdb
+D:\dev\IIO13200_NET_15S\Tehtava5\bin\Debug\Tehtava5.exe.config
+D:\dev\IIO13200_NET_15S\Tehtava5\obj\Debug\Tehtava5.exe
+D:\dev\IIO13200_NET_15S\Tehtava5\obj\Debug\Tehtava5.pdb
+D:\dev\IIO13200_NET_15S\Tehtava5\bin\Debug\Tehtava5.exe
+D:\dev\IIO13200_NET_15S\Tehtava5\bin\Debug\Tehtava5.pdb
+D:\dev\IIO13200_NET_15S\Tehtava5\obj\Debug\Tehtava5.csprojResolveAssemblyReference.cache
+D:\dev\IIO13200_NET_15S\Tehtava5\obj\Debug\MainWindow.g.cs
+D:\dev\IIO13200_NET_15S\Tehtava5\obj\Debug\App.g.cs
+D:\dev\IIO13200_NET_15S\Tehtava5\obj\Debug\Tehtava5_MarkupCompile.cache
+D:\dev\IIO13200_NET_15S\Tehtava5\obj\Debug\Tehtava5_MarkupCompile.lref
+D:\dev\IIO13200_NET_15S\Tehtava5\obj\Debug\MainWindow.baml
+D:\dev\IIO13200_NET_15S\Tehtava5\obj\Debug\Tehtava5.g.resources
+D:\dev\IIO13200_NET_15S\Tehtava5\obj\Debug\Tehtava5.Properties.Resources.resources
+D:\dev\IIO13200_NET_15S\Tehtava5\obj\Debug\Tehtava5.csproj.GenerateResource.Cache
