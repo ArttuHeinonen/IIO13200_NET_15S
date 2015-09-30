@@ -32,7 +32,7 @@ namespace Tehtava5
 
         private void buttonGetDataView_Click(object sender, RoutedEventArgs e)
         {
-
+            dataGrid.DataContext = Tehtava5.DBDemoxOy.GetDataFiltered(textBox.Text);
         }
 
         private void buttonGetDataSet_Click(object sender, RoutedEventArgs e)

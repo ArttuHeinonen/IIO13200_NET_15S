@@ -9,7 +9,7 @@
     <Grid>
         <Button x:Name="buttonGetDataTable" Content="Hae läsnäolot (DataTable)" Click="buttonGetDataTable_Click" Margin="10,10,10,580"/>
         <DataGrid x:Name="dataGrid" Margin="10,255,10,10" ItemsSource="{Binding}"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="45" Margin="10,75,10,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="497"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="45" Margin="10,75,10,0" TextWrapping="Wrap" Text="H3425" VerticalAlignment="Top" Width="497"/>
         <Button x:Name="buttonGetDataView" Content="Hae läsnäoloni (DataView)" Click="buttonGetDataView_Click" Margin="10,125,10,465"/>
         <Button x:Name="buttonGetDataSet" Content="Hae läsnäolot (Typed DataSet)" Click="buttonGetDataSet_Click" Margin="10,190,10,400"/>
     </Grid>

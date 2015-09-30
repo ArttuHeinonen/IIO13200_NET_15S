@@ -30,6 +30,18 @@ namespace Tehtava5
         {
             //DBkerros, haetaan DemoxOy-tietokannasta taulun lasnaolot tietueet, palauttaa DataTablen
             string sql = "SELECT asioid, lastname, firstname, date FROM lasnaolot";// WHERE asioid='H3425'";
+            return GetData(sql);
+        }
+
+        public static DataTable GetDataFiltered(String filter)
+        {
+            //DBkerros, haetaan DemoxOy-tietokannasta taulun lasnaolot tietueet, palauttaa DataTablen
+            string sql = "SELECT asioid, lastname, firstname, date FROM lasnaolot WHERE asioid='" + filter + "'";
+            return GetData(sql);
+        }
+
+        public static DataTable GetData(String sql)
+        {
             string connStr = Tehtava5.Properties.Settings.Default.connection.ToString();
             //string connStr = @"Data source=eight.labranet.jamk.fi;initial catalog=DemoxOy;user=koodari;password=koodari13";
             try
