@@ -1,0 +1,15 @@
+D:\H3425\IIO13200_NET_15S\DemoJSON\bin\Debug\DemoJSON.exe.config
+D:\H3425\IIO13200_NET_15S\DemoJSON\bin\Debug\DemoJSON.exe
+D:\H3425\IIO13200_NET_15S\DemoJSON\bin\Debug\DemoJSON.pdb
+D:\H3425\IIO13200_NET_15S\DemoJSON\obj\Debug\DemoJSON.csprojResolveAssemblyReference.cache
+D:\H3425\IIO13200_NET_15S\DemoJSON\obj\Debug\MainWindow.g.cs
+D:\H3425\IIO13200_NET_15S\DemoJSON\obj\Debug\App.g.cs
+D:\H3425\IIO13200_NET_15S\DemoJSON\obj\Debug\DemoJSON_MarkupCompile.cache
+D:\H3425\IIO13200_NET_15S\DemoJSON\obj\Debug\DemoJSON_MarkupCompile.lref
+D:\H3425\IIO13200_NET_15S\DemoJSON\obj\Debug\MainWindow.baml
+D:\H3425\IIO13200_NET_15S\DemoJSON\obj\Debug\DemoJSON.g.resources
+D:\H3425\IIO13200_NET_15S\DemoJSON\obj\Debug\DemoJSON.Properties.Resources.resources
+D:\H3425\IIO13200_NET_15S\DemoJSON\obj\Debug\DemoJSON.csproj.GenerateResource.Cache
+D:\H3425\IIO13200_NET_15S\DemoJSON\obj\Debug\DemoJSON.exe
+D:\H3425\IIO13200_NET_15S\DemoJSON\obj\Debug\DemoJSON.pdb
+D:\H3425\IIO13200_NET_15S\DemoJSON\bin\Debug\Newtonsoft.Json.dll

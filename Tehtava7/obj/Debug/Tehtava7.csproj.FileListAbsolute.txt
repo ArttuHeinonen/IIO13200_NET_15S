@@ -1,0 +1,15 @@
+D:\H3425\IIO13200_NET_15S\Tehtava7\bin\Debug\Tehtava7.exe.config
+D:\H3425\IIO13200_NET_15S\Tehtava7\bin\Debug\Tehtava7.exe
+D:\H3425\IIO13200_NET_15S\Tehtava7\bin\Debug\Tehtava7.pdb
+D:\H3425\IIO13200_NET_15S\Tehtava7\obj\Debug\MainWindow.g.cs
+D:\H3425\IIO13200_NET_15S\Tehtava7\obj\Debug\App.g.cs
+D:\H3425\IIO13200_NET_15S\Tehtava7\obj\Debug\Tehtava7_MarkupCompile.cache
+D:\H3425\IIO13200_NET_15S\Tehtava7\obj\Debug\Tehtava7_MarkupCompile.lref
+D:\H3425\IIO13200_NET_15S\Tehtava7\obj\Debug\MainWindow.baml
+D:\H3425\IIO13200_NET_15S\Tehtava7\obj\Debug\Tehtava7.g.resources
+D:\H3425\IIO13200_NET_15S\Tehtava7\obj\Debug\Tehtava7.Properties.Resources.resources
+D:\H3425\IIO13200_NET_15S\Tehtava7\obj\Debug\Tehtava7.csproj.GenerateResource.Cache
+D:\H3425\IIO13200_NET_15S\Tehtava7\obj\Debug\Tehtava7.exe
+D:\H3425\IIO13200_NET_15S\Tehtava7\obj\Debug\Tehtava7.pdb
+D:\H3425\IIO13200_NET_15S\Tehtava7\bin\Debug\Newtonsoft.Json.dll
+D:\H3425\IIO13200_NET_15S\Tehtava7\obj\Debug\Tehtava7.csprojResolveAssemblyReference.cache
