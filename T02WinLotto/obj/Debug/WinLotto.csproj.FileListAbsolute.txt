@@ -1,0 +1,13 @@
+c:\users\matti\documents\visual studio 2012\Projects\WinLotto\bin\Debug\WinLotto.exe.config
+c:\users\matti\documents\visual studio 2012\Projects\WinLotto\obj\Debug\WinLotto.csprojResolveAssemblyReference.cache
+c:\users\matti\documents\visual studio 2012\Projects\WinLotto\obj\Debug\MainWindow.baml
+c:\users\matti\documents\visual studio 2012\Projects\WinLotto\obj\Debug\MainWindow.g.cs
+c:\users\matti\documents\visual studio 2012\Projects\WinLotto\obj\Debug\App.g.cs
+c:\users\matti\documents\visual studio 2012\Projects\WinLotto\obj\Debug\WinLotto_MarkupCompile.cache
+c:\users\matti\documents\visual studio 2012\Projects\WinLotto\obj\Debug\WinLotto.g.resources
+c:\users\matti\documents\visual studio 2012\Projects\WinLotto\obj\Debug\WinLotto.Properties.Resources.resources
+c:\users\matti\documents\visual studio 2012\Projects\WinLotto\obj\Debug\WinLotto.csproj.GenerateResource.Cache
+c:\users\matti\documents\visual studio 2012\Projects\WinLotto\bin\Debug\WinLotto.exe
+c:\users\matti\documents\visual studio 2012\Projects\WinLotto\bin\Debug\WinLotto.pdb
+c:\users\matti\documents\visual studio 2012\Projects\WinLotto\obj\Debug\WinLotto.exe
+c:\users\matti\documents\visual studio 2012\Projects\WinLotto\obj\Debug\WinLotto.pdb

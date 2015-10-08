@@ -32,7 +32,7 @@ namespace Tehtava7
             InitializeComponent();
             PopulateComboBox();
         }
-
+        
         private void button_Click(object sender, RoutedEventArgs e)
         {
             JSON = GetTrainsJSON();
