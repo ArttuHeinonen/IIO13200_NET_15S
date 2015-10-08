@@ -8,7 +8,14 @@ namespace Harkka
 {
     public class Resource
     {
-        string name { get; set; }
-        float value { get; set; }
+        public string name { get; set; }
+        public float value { get; set; }
+        public float maxValue { get; set; }
+        public Resource(string name, float value, float maxValue)
+        {
+            this.name = name;
+            this.value = value;
+            this.maxValue = maxValue;
+        }
     }
 }

@@ -34,7 +34,11 @@
                 </TabControl.Resources>
                 <TabItem Header="Camp" Foreground="White">
                     <Grid Background="#FF201F1D" Margin="0,0,0,0">
-                        <Button x:Name="buttonHarvest" Content="Harvest" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="33"/>
+                        <Button x:Name="buttonHarvest" Content="Harvest" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="33" Click="buttonHarvest_Click"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Tribe" Foreground="White">
+                    <Grid Background="#FF201F1D" Margin="0,0,0,0">
                     </Grid>
                 </TabItem>
                 <TabItem Header="Science" Foreground="White">

@@ -20,9 +20,27 @@ namespace Harkka
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        
+        BLResource res = new BLResource();
         public MainWindow()
         {
             InitializeComponent();
+
+        }
+
+        private void buttonHarvest_Click(object sender, RoutedEventArgs e)
+        {
+            if (!res.doesResourceExist("Food"))
+            {
+                res.CreateResource("Food", 500); 
+            }
+            else
+            {
+                res.IncrementResource("Food", 1);
+            }
+            
+            dataGrid.ItemsSource = res.res;
         }
     }
 }
