@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harkka", "Harkka\Harkka.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T02WinLotto", "T02WinLotto\T02WinLotto.csproj", "{A557F18D-B99A-41EC-9D0E-D93C08F90D39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestForWinLotto", "UnitTestForWinLotto\UnitTestForWinLotto.csproj", "{9574C0A9-CDC4-4594-A300-51707394A41A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava8", "Tehtava8\Tehtava8.csproj", "{FF87223A-E51A-4C8D-9FA9-1D34050D987B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{A557F18D-B99A-41EC-9D0E-D93C08F90D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A557F18D-B99A-41EC-9D0E-D93C08F90D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A557F18D-B99A-41EC-9D0E-D93C08F90D39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9574C0A9-CDC4-4594-A300-51707394A41A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9574C0A9-CDC4-4594-A300-51707394A41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9574C0A9-CDC4-4594-A300-51707394A41A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9574C0A9-CDC4-4594-A300-51707394A41A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF87223A-E51A-4C8D-9FA9-1D34050D987B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF87223A-E51A-4C8D-9FA9-1D34050D987B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF87223A-E51A-4C8D-9FA9-1D34050D987B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF87223A-E51A-4C8D-9FA9-1D34050D987B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

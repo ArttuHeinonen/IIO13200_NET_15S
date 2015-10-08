@@ -1,0 +1,9 @@
+D:\H3425\IIO13200_NET_15S\UnitTestForWinLotto\bin\Debug\UnitTestForWinLotto.dll
+D:\H3425\IIO13200_NET_15S\UnitTestForWinLotto\bin\Debug\UnitTestForWinLotto.pdb
+D:\H3425\IIO13200_NET_15S\UnitTestForWinLotto\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\H3425\IIO13200_NET_15S\UnitTestForWinLotto\bin\Debug\WinLotto.exe
+D:\H3425\IIO13200_NET_15S\UnitTestForWinLotto\bin\Debug\WinLotto.pdb
+D:\H3425\IIO13200_NET_15S\UnitTestForWinLotto\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\H3425\IIO13200_NET_15S\UnitTestForWinLotto\obj\Debug\UnitTestForWinLotto.csprojResolveAssemblyReference.cache
+D:\H3425\IIO13200_NET_15S\UnitTestForWinLotto\obj\Debug\UnitTestForWinLotto.dll
+D:\H3425\IIO13200_NET_15S\UnitTestForWinLotto\obj\Debug\UnitTestForWinLotto.pdb

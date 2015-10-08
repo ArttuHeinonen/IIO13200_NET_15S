@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="Windows-1252" standalone="yes"?>
+<palautteet>
+  <palaute>
+    <pvm>20131001</pvm>
+    <tekija>Juice Läskinen</tekija>
+    <opittu>paljon hyvää ja törkeän tärkeää</opittu>
+    <haluanoppia>tietoturvasta tsäbää</haluanoppia>
+    <hyvaa>demot</hyvaa>
+    <parannettavaa>enemmän omaa tekemistä</parannettavaa>
+    <muuta>GitHub ok </muuta>
+  </palaute>
+  <palaute>
+    <pvm>2013103</pvm>
+    <tekija>Esa Vesa</tekija>
+    <opittu>ASP.NET perusteet</opittu>
+    <haluanoppia>autentikointi ja hashaus</haluanoppia>
+    <hyvaa>hyvää</hyvaa>
+    <parannettavaa>parannettavaa</parannettavaa>
+    <muuta>blaah blaah</muuta>
+  </palaute>
+  <palaute>
+    <pvm>20151008</pvm>
+    <tekija>Arttu</tekija>
+    <opittu>Heinonen</opittu>
+    <haluanoppia>asdasd</haluanoppia>
+    <hyvaa>asd</hyvaa>
+    <parannettavaa>asd</parannettavaa>
+    <muuta>asd</muuta>
+  </palaute>
+</palautteet>

@@ -1,0 +1,42 @@
+﻿<Window x:Class="Tehtava8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava8"
+        mc:Ignorable="d"
+        Title="Palaute" Height="513.414" Width="525" FontSize="13.333">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TabControl x:Name="tabControl">
+            <TabItem Header="Palaute">
+                <Grid Background="#FFE5E5E5" Margin="0,0,0,0">
+                    <Label x:Name="labelFeedBack" Content="Anna palaute" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Background="#FFE5E5E5" Foreground="#FF1111D3" FontWeight="Bold" FontSize="18.667"/>
+                    <Label x:Name="labelPVM" Content="Pvm:" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="labelDate" Content="10.10.2015" HorizontalAlignment="Left" Margin="48,43,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="labelName" Content="Nimi:" HorizontalAlignment="Left" Margin="196,43,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="242,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="labelLearned" Content="Olen oppinut:" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="textBoxLearned" HorizontalAlignment="Left" Height="58" Margin="112,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+                    <Label x:Name="labelWantToLearn" Content="Haluan oppia:" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="textBoxWantToLearn" HorizontalAlignment="Left" Height="58" Margin="112,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+                    <Label x:Name="labelGood" Content="Hyvää:" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="textBoxGood" HorizontalAlignment="Left" Height="58" Margin="112,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+                    <Label x:Name="labelImprovement" Content="Parannettavaa:" HorizontalAlignment="Left" Margin="10,265,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="textBoxImprovement" HorizontalAlignment="Left" Height="58" Margin="112,265,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+                    <Label x:Name="labelOther" Content="Muuta:" HorizontalAlignment="Left" Margin="10,328,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="textBoxOther" HorizontalAlignment="Left" Height="58" Margin="112,328,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+                    <Button x:Name="buttonSend" Content="Lähetä" HorizontalAlignment="Left" Margin="10,391,0,-20" VerticalAlignment="Top" Width="210" Height="34" Click="buttonSend_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Vastaukset">
+                <Grid Background="#FFE5E5E5" Margin="0,0,0,0">
+                    <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

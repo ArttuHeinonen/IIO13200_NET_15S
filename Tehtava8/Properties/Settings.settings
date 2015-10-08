@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Tehtava8.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="filePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\H3425\IIO13200_NET_15S\Tehtava8\palaute.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
