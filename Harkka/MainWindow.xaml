@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Harkka"
         mc:Ignorable="d"
-        Title="Civ" Height="350" Width="656.731" FontSize="12">
+        Title="Tribal game" Height="350" Width="656.731" FontSize="12">
     <Grid Background="#FF201F1D">
         <GridSplitter x:Name="gridSplitter" HorizontalAlignment="Left" Height="320" Margin="237,0,0,0" VerticalAlignment="Top" Width="5" Background="#FF3A3835" IsEnabled="False"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" VerticalAlignment="Top" Height="320" Width="237" Background="#FF201F1D" BorderBrush="#FF201F1D"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" HeadersVisibility="None" VerticalAlignment="Top" Foreground="Red" Background="#FF201F1D" BorderBrush="#FF201F1D" RowBackground="#FF201F1D"  IsEnabled="False" FontSize="13.333" />
         <StackPanel HorizontalAlignment="Left" Height="320" Margin="242,0,0,0" VerticalAlignment="Top" Width="407">
             <TabControl x:Name="tabControl" Height="320" Background="#FF201F1D" BorderBrush="#FF201F1D">
                 <TabControl.Resources>
@@ -35,6 +35,7 @@
                 <TabItem Header="Camp" Foreground="White">
                     <Grid Background="#FF201F1D" Margin="0,0,0,0">
                         <Button x:Name="buttonHarvest" Content="Harvest" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="33" Click="buttonHarvest_Click"/>
+                        <Button x:Name="buttonHut" Content="Hut" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="33" Click="buttonHut_Click" Margin="140,0,0,0" IsEnabled="False"/>
                     </Grid>
                 </TabItem>
                 <TabItem Header="Tribe" Foreground="White">
@@ -42,6 +43,10 @@
                     </Grid>
                 </TabItem>
                 <TabItem Header="Science" Foreground="White">
+                    <Grid Background="#FF201F1D" Margin="0,0,0,0">
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Religion" Foreground="White">
                     <Grid Background="#FF201F1D" Margin="0,0,0,0">
                     </Grid>
                 </TabItem>

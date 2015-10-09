@@ -10,20 +10,45 @@ namespace Harkka
     {
         public List<Resource> res = new List<Resource>();
 
-        
-
-        public void CreateResource(string name, float maxValue)
+        public BLResource()
         {
-            res.Add(new Resource(name, 1, maxValue));
+            CreateResource("Food", 500, 1);
+            CreateResource("Wood", 100, 0.5f);
+            CreateResource("Stone", 25, 0.01f);
+            CreateResource("Science", 200, 1f);
         }
 
-        public void IncrementResource(string name, float inc)
+        private void CreateResource(string name, float maxValue, float inc)
+        {
+            res.Add(new Resource(name, 0, maxValue, inc));
+        }
+        public void IncrementAllResources()
+        {
+            foreach (Resource r in res)
+            {
+                r.value += r.increment;
+                isResourceMaxed(r);
+            }
+        }
+        public void IncrementResource(string name)
         {
             foreach (Resource r in res)
             {
                 if (r.name == name)
                 {
-                    r.value += inc;
+                    r.value += r.increment;
+                    isResourceMaxed(r);
+                }
+            }
+        }
+
+        public void AddResource(string name, float amount)
+        {
+            foreach (Resource r in res)
+            {
+                if (r.name == name)
+                {
+                    r.value += amount;
                     isResourceMaxed(r);
                 }
             }

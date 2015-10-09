@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Harkka
 {
@@ -21,25 +22,44 @@ namespace Harkka
     public partial class MainWindow : Window
     {
 
-        
         BLResource res = new BLResource();
         public MainWindow()
         {
             InitializeComponent();
+            DispatcherTimer timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += timer_Tick;
+            timer.Start();
+        }
 
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            res.IncrementResource("Food");
+            updateDataGrid();
         }
 
         private void buttonHarvest_Click(object sender, RoutedEventArgs e)
         {
             if (!res.doesResourceExist("Food"))
             {
-                res.CreateResource("Food", 500); 
+                //Don't hide resource
             }
             else
             {
-                res.IncrementResource("Food", 1);
+                res.AddResource("Food", 1);
+                res.AddResource("Wood", 0.5f);
             }
-            
+            updateDataGrid();
+        }
+
+        private void buttonHut_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void updateDataGrid()
+        {
+            dataGrid.ItemsSource = null;
             dataGrid.ItemsSource = res.res;
         }
     }
