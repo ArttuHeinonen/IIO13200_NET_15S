@@ -39,7 +39,21 @@
                     </Grid>
                 </TabItem>
                 <TabItem Header="Tribe" Foreground="White">
-                    <Grid Background="#FF201F1D" Margin="0,0,0,0">
+                    <Grid Background="#FF201F1D" Margin="0,-2,0,2">
+                        <Label x:Name="Thinkerlbl" Content="Thinkers" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top" Foreground="White"/>
+                        <Button x:Name="buttonThinkerPlus" Content="+" HorizontalAlignment="Left" Margin="174,71,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="#FF686565" BorderBrush="#FFBD9833" Foreground="#FF117E00" FontWeight="Bold" FontSize="16"/>
+                        <Button x:Name="buttonThinkerMinus" Content="-" HorizontalAlignment="Left" Margin="211,71,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="#FF686565" BorderBrush="#FFBD9833" Foreground="#FF7E0006" FontWeight="Bold" FontSize="16"/>
+                        <Label x:Name="ThinkerNumlbl" Content="0" HorizontalAlignment="Left" Margin="121,74,0,0" VerticalAlignment="Top" Foreground="White"/>
+                        <Label x:Name="WoodCutterlbl" Content="Woodcutters" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Foreground="White"/>
+                        <Label x:Name="WoodcutterNumlbl" Content="0" HorizontalAlignment="Left" Margin="121,105,0,0" VerticalAlignment="Top" Foreground="White"/>
+                        <Button x:Name="buttonWoodcutterPlus" Content="+" HorizontalAlignment="Left" Margin="174,105,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="#FF686565" BorderBrush="#FFBD9833" Foreground="#FF117E00" FontWeight="Bold" FontSize="16"/>
+                        <Button x:Name="buttonWoodcutterMinus" Content="-" HorizontalAlignment="Left" Margin="211,105,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="#FF686565" BorderBrush="#FFBD9833" Foreground="#FF7E0006" FontWeight="Bold" FontSize="16"/>
+                        <Label x:Name="Shamanlbl" Content="Shamans" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Foreground="White"/>
+                        <Label x:Name="ShamanNumlbl" Content="0" HorizontalAlignment="Left" Margin="121,142,0,0" VerticalAlignment="Top" Foreground="White"/>
+                        <Button x:Name="buttonShamanPlus" Content="+" HorizontalAlignment="Left" Margin="174,142,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="#FF686565" BorderBrush="#FFBD9833" Foreground="#FF117E00" FontWeight="Bold" FontSize="16"/>
+                        <Button x:Name="buttonShamanMinus" Content="-" HorizontalAlignment="Left" Margin="211,142,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="#FF686565" BorderBrush="#FFBD9833" Foreground="#FF7E0006" FontWeight="Bold" FontSize="16"/>
+                        <Label x:Name="Ilderslbl" Content="Idling villagers" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White"/>
+                        <Label x:Name="IdlersNumlbl" Content="0" HorizontalAlignment="Left" Margin="121,10,0,0" VerticalAlignment="Top" Foreground="White"/>
                     </Grid>
                 </TabItem>
                 <TabItem Header="Science" Foreground="White">

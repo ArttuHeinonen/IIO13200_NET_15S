@@ -25,3 +25,4 @@ D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.Properties.Resources.resources
 D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.csproj.GenerateResource.Cache
 D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.exe
 D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.pdb
+D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.csprojResolveAssemblyReference.cache
