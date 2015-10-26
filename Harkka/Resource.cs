@@ -21,16 +21,4 @@ namespace Harkka
             this.increment = inc;
         }
     }
-
-    public class Building
-    {
-        public string name { get; set; }
-        public float requirement { get; set; }
-
-        public Building(string name, float req)
-        {
-            this.name = name;
-            this.requirement = req;
-        }
-    }
 }
