@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Harkka
 {
-    class Building
+    public class Building
     {
         public string name { get; set; }
         public String reqRes { get; set; }

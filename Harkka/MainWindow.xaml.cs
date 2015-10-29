@@ -23,9 +23,11 @@ namespace Harkka
     {
 
         BLResource res = new BLResource();
+        BLBuilding building = new BLBuilding();
         public MainWindow()
         {
             InitializeComponent();
+            CustomButton test = new CustomButton();
             DispatcherTimer timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += timer_Tick;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Harkka
 {
-    class BLBuilding
+    public class BLBuilding
     {
         public List<Building> buildings = new List<Building>();
 
