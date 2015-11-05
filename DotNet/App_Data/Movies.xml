@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Movies xmlns="">
+  <Movie Name="Seven Samurai" Country="Japan" Director="Akira Kurosawa" />
+  <Movie Name="Happy Together" Country="China" Director="Wong Kar Wai"/>
+  <Movie Name="Shoot The Piano Player" Country="France" Director="Francois Truffaut"/>
+  <Movie Name="Roshomon" Country="Japan" Director="Akira Kurosawa" />
+  <Movie Name="Dead Man" Country="USA" Director="Jim Jarmusch"/>
+  <Movie Name="Children of Heaven" Country="Unknown" Director="Maj Country"/>
+  <Movie Name="Spectre" Country="England" Director="Sam Mendes"/>
+</Movies>

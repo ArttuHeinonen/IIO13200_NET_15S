@@ -1,0 +1,55 @@
+﻿p {font-family:Arial, Helvetica, sans-serif }
+h1
+{
+	font-family: Arial;
+	background-color:silver;  
+	color:blue; 
+	font-size:x-large 
+}
+h2
+{
+	font-family: Arial;
+	color:blue;
+}
+h3
+{
+	font-family: Arial;
+	color:green;
+}
+h4
+{
+	color: rgb(51, 102, 0);
+}
+button
+{
+	background-color: rgb(51, 0, 153);
+	color: rgb(255, 255, 255);
+}
+label
+{
+	color: rgb(0, 0, 0);
+}
+textarea
+{
+	color: rgb(11, 0, 0);
+}
+fieldset
+{
+	color: rgb(11, 0, 0);
+}
+legend
+{
+	color: rgb(51, 0, 153);
+}
+select
+{
+	color: rgb(11, 0, 0);
+}
+caption
+{
+	color: rgb(51, 0, 153);
+}
+th
+{
+	color: rgb(0, 0, 0);
+}

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Harkka;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -9,10 +10,12 @@ using System.Web.UI.WebControls;
 public partial class Index : System.Web.UI.Page
 {
     
+    public BLResource res;
+
     protected void Page_Load(object sender, EventArgs e)
     {
-        DataTable dt = Harkka.BLResource.GetResources();
-        grid.DataSource = 
+        DataTable dt = res.GetResources();
+        //grid.DataSource = 
     }
 
 

@@ -28,7 +28,7 @@ namespace Harkka
             foreach (Resource r in res)
             {
                 r.value += r.increment;
-                isResourceMaxed(r);
+                IsResourceMaxed(r);
             }
         }
         public void IncrementResource(string name)
@@ -38,7 +38,7 @@ namespace Harkka
                 if (r.name == name)
                 {
                     r.value += r.increment;
-                    isResourceMaxed(r);
+                    IsResourceMaxed(r);
                 }
             }
         }
@@ -50,11 +50,11 @@ namespace Harkka
                 if (r.name == name)
                 {
                     r.value += amount;
-                    isResourceMaxed(r);
+                    IsResourceMaxed(r);
                 }
             }
         }
-        public Boolean doesResourceExist(string name)
+        public Boolean DoesResourceExist(string name)
         {
             foreach (Resource r in res)
             {
@@ -65,7 +65,7 @@ namespace Harkka
             }
             return false;
         }
-        public Boolean isResourceMaxed(Resource r)
+        public Boolean IsResourceMaxed(Resource r)
         {
             if(r.value > r.maxValue)
             {
@@ -74,7 +74,7 @@ namespace Harkka
             }
             return false;
         }
-        public DataTable getResources()
+        public DataTable GetResources()
         {
             DataTable dt = new DataTable();
             return dt;
