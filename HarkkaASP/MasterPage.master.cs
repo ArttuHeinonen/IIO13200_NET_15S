@@ -25,26 +25,13 @@ public partial class MasterPage : System.Web.UI.MasterPage
 
     protected void Timer1_Tick(object sender, EventArgs e)
     {
+        res.res = (List<Resource>)resourceGrid.DataSource;
         days = Int32.Parse(label1.Text) + 1;
         label1.Text = days.ToString();
 
-        List<Resource> prevResources = (List<Resource>)resourceGrid.DataSource;
+        res.IncrementAllResources();
 
-        //res.IncrementAllResources(prevResources);
-
-        for (int i = 0; i < prevResources.Count; i++)
-        {
-            if (prevResources[i].isAvailable)
-            {
-                prevResources[i].value += prevResources[i].increment;
-                res.IsResourceMaxed(prevResources[i]);
-            }
-        }
-
-        resourceGrid.DataSource = prevResources;
-        resourceGrid.DataBind();
-
-        //UpdateGridView();
+        UpdateGridView();
     }
 
     private void UpdateGridView()

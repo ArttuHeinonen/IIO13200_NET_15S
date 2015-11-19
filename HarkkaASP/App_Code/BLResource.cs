@@ -9,7 +9,7 @@ namespace HarkkaASP
 {
     public class BLResource
     {
-        private List<Resource> res = new List<Resource>();
+        public List<Resource> res = new List<Resource>();
 
         public BLResource()
         {
