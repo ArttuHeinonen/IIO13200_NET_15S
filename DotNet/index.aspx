@@ -18,6 +18,8 @@
         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/DemoXML.aspx">Demo SQLDataSource</asp:HyperLink>
         <h1>To 5.11.2015</h1>
         <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/IndexMP.aspx">Esimerkki Master Pagesta</asp:HyperLink>
+        <h1>To 12.11.2015</h1>
+        <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/DemoEF.aspx">Esimerkki Entity Frameworkista</asp:HyperLink>
     </div>
     </form>
 </body>

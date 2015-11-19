@@ -1,2 +1,33 @@
 ﻿body {
+    background-color:#ff0000;
+}
+
+.tabs{
+    width:100%;
+    display:inline-block;
+}
+
+.tab-links:after{
+    display:block;
+    clear:both;
+    content:'';
+}
+
+.tab-links li{
+    margin:0px 5px;
+    float:left;
+    list-style:none;
+}
+
+.tab-links a{
+    padding:9px 15px;
+    display:inline-block;
+    border-radius:3px 3px 0px 0px;
+    font-size:16px;
+    font-weight:600;
+    transition:all linear 0.15s;
+}
+
+.tab-links a:hover{
+    text-decoration:none;
 }

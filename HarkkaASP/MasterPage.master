@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Tribal game</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <asp:ScriptManager ID="ScriptManager1" runat="server"/>
+        <div>
+            <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick"></asp:Timer>
+    
+            <asp:UpdatePanel ID="UpdatePanel1" UpdateMode="Conditional" runat="server">
+                <Triggers>
+                  <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
+                </Triggers>
+                <ContentTemplate>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>
+                                <asp:GridView ID="resourceGrid" runat="server"></asp:GridView>
+                            </td>
+                            <td>
+                                <a href="Village.aspx">Village</a>
+                                <a href="Population.aspx">Population</a>
+                            </td>
+                            <td>Events</td>
+                        </tr>
+                    </table>
+                    <h1><asp:Label ID="label1" runat="server" Text="0"></asp:Label></h1>
+                    
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                        
+                    </asp:ContentPlaceHolder>
+                </ContentTemplate>  
+            </asp:UpdatePanel>
+        </div>
+
+        
+    </div>
+    </form>
+</body>
+</html>
