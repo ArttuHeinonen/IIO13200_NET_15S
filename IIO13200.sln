@@ -45,26 +45,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DotNet", "S:\public_html\Do
 		VWDPort = "5326"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_5326"
-		Debug.AspNetCompiler.PhysicalPath = "S:\public_html\DotNet\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5326\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_5326"
-		Release.AspNetCompiler.PhysicalPath = "S:\public_html\DotNet\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5326\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "5326"
-		SlnRelativePath = "S:\public_html\DotNet\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HarkkaASP", "HarkkaASP\", "{63078AAC-19E7-4F5E-B8CC-3A2820A007C9}"
 	ProjectSection(WebsiteProperties) = preProject
