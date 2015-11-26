@@ -34,7 +34,7 @@ namespace HarkkaASP
                 }
             }
         }
-        public void IncrementResource(string name)
+        public void IncrementResource(string name, float inc)
         {
             foreach (Resource r in res)
             {
@@ -43,6 +43,14 @@ namespace HarkkaASP
                     r.value += r.increment;
                     IsResourceMaxed(r);
                 }
+            }
+        }
+
+        public void ResetResourceValues()
+        {
+            foreach (Resource r in res)
+            {
+                r.value = 0;
             }
         }
 

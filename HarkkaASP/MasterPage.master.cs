@@ -9,9 +9,8 @@ using HarkkaASP;
 
 public partial class MasterPage : System.Web.UI.MasterPage
 {
-    public BLResource res = new BLResource();
-    public BLBuilding building = new BLBuilding();
-    public int days;
+    BLResource res = new BLResource();
+    int days;
 
     protected void Page_PreInit(object sender, EventArgs e)
     {
@@ -20,16 +19,21 @@ public partial class MasterPage : System.Web.UI.MasterPage
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        LoadSessionVariables();
         UpdateGridView();
     }
 
     protected void Timer1_Tick(object sender, EventArgs e)
     {
-        res.res = (List<Resource>)resourceGrid.DataSource;
-        days = Int32.Parse(label1.Text) + 1;
+        LoadSessionResources();
+        LoadSessionDays();
+
+        days++;
         label1.Text = days.ToString();
 
         res.IncrementAllResources();
+
+        SaveSessionVariables();
 
         UpdateGridView();
     }
@@ -38,5 +42,34 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         resourceGrid.DataSource = res.GetAvailableResources();
         resourceGrid.DataBind();
+    }
+
+    private void SaveSessionVariables()
+    {
+        Session["Resource"] = res;
+        Session["Day"] = days;
+    }
+
+    private void LoadSessionVariables()
+    {
+        LoadSessionResources();
+        LoadSessionDays();
+        label1.Text = days.ToString();
+    }
+
+    private void LoadSessionResources()
+    {
+        if (Session["Resource"] != null)
+        {
+            res = (BLResource)Session["Resource"];
+        }
+    }
+
+    private void LoadSessionDays()
+    {
+        if (Session["Day"] != null)
+        {
+            days = (Int32)Session["Day"];
+        }
     }
 }

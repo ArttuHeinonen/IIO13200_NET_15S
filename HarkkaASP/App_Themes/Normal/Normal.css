@@ -1,6 +1,10 @@
 ﻿body {
-    background-color:#ff0000;
+    background-color:#FFFFFF;
 }
+
+.auto-style1 {
+            width: 417px;
+        }
 
 .tabs{
     width:100%;

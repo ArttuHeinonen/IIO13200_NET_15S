@@ -7,44 +7,47 @@
     <title>Tribal game</title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <style type="text/css">
-        .auto-style1 {
-            width: 417px;
-        }
-    </style>
+    <link href="App_Themes/Normal/Normal.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ScriptManager ID="ScriptManager1" runat="server"/>
-        <div>
-            <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick"></asp:Timer>
-    
-            <asp:UpdatePanel ID="UpdatePanel1" UpdateMode="Conditional" runat="server">
-                <Triggers>
-                  <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
-                </Triggers>
-                <ContentTemplate>
-                    <table style="width: 100%;">
-                        <tr>
-                            <td class="auto-style1">
-                                <asp:GridView ID="resourceGrid" runat="server" DataSourceID="ObjectDataSource1"></asp:GridView>
-                            </td>
-                            <td>
-                                <a href="Village.aspx">Village</a>
-                                <a href="Population.aspx">Population</a>
-                            </td>
-                            <td>Events</td>
-                        </tr>
-                    </table>
-                    <h1><asp:Label ID="label1" runat="server" Text="0"></asp:Label></h1>
-                    
-                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-                        
-                    </asp:ContentPlaceHolder>
-                </ContentTemplate>  
-            </asp:UpdatePanel>
-        </div>
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+    <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick"></asp:Timer>
+    <div class="game">
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+            <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
+            </Triggers>
+            <ContentTemplate>
+                <table style="width: 100%;">
+                    <tr>
+                        <td class="auto-style1">
+                            <asp:GridView ID="resourceGrid" runat="server"></asp:GridView>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a href="Village.aspx">Village</a>
+                                        <a href="Population.aspx">Population</a>
+                                        <a href="Options.aspx">Options</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                                
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Events</td>
+                    </tr>
+                </table>
+                <h1><asp:Label ID="label1" runat="server" Text="0"></asp:Label></h1>
+            </ContentTemplate>
+     </asp:UpdatePanel>
     </div>
     </form>
 </body>
