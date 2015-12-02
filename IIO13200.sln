@@ -43,7 +43,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DotNet", "S:\public_html\Do
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "5326"
-		SlnRelativePath = "S:\public_html\DotNet\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject

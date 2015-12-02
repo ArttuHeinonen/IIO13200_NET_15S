@@ -10,7 +10,7 @@
         </tr>
         <tr>
             <td><asp:Button ID="buyHut" runat="server" Text="Hut - 0" OnClick="buyHut_Click" /></td>
-            <td></td>
+            <td><asp:Button ID="buyOutpost" runat="server" Text="Hunt copse - 0" OnClick="buyOutpost_Click"/></td>
         </tr>
     </table>
 </asp:Content>

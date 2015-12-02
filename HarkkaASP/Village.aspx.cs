@@ -8,12 +8,34 @@ using HarkkaASP;
 
 public partial class Village : System.Web.UI.Page
 {
-    BLResource res;
-    BLBuilding building;
+    BLResource res = new BLResource();
+    BLBuilding building = new BLBuilding();
 
     protected void Page_Load(object sender, EventArgs e)
     {
         
+    }
+
+    private void LoadSesionVariables()
+    {
+        LoadSessionResources();
+        LoadSessionBuildings();
+    }
+
+    private void LoadSessionResources()
+    {
+        if (Session["Resource"] != null)
+        {
+            res = (BLResource)Session["Resource"];
+        }
+    }
+
+    private void LoadSessionBuildings()
+    {
+        if(Session["Buildings"] != null)
+        {
+            building = (BLBuilding)Session["Buildings"];
+        }
     }
 
     protected void gatherFood_Click(object sender, EventArgs e)
@@ -35,13 +57,21 @@ public partial class Village : System.Web.UI.Page
 
     protected void buyHut_Click(object sender, EventArgs e)
     {
-
+        BuyBuilding("Hut");
+        buyHut.Text = "Hut - " + building.GetBuilding("Hut").amount;
     }
-    private void LoadSessionResources()
+
+    public void BuyBuilding(String buildingName)
     {
-        if (Session["Resource"] != null)
+        if (building.IsRequirementsMetForBuilding(buildingName, res))
         {
-            res = (BLResource)Session["Resource"];
+            res = building.BuyBuilding(buildingName, res);
+            Session["Resource"] = res;
         }
+    }
+
+    protected void buyOutpost_Click(object sender, EventArgs e)
+    {
+        BuyBuilding("Hunt copse");
     }
 }

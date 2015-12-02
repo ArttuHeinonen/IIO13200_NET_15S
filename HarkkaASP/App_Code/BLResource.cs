@@ -13,6 +13,7 @@ namespace HarkkaASP
 
         public BLResource()
         {
+            CreateResource("Population", 5, 0, true);
             CreateResource("Food", 500, 1, true);
             CreateResource("Wood", 100, 0.5f, true);
             CreateResource("Stone", 25, 0.01f, true);
@@ -88,6 +89,18 @@ namespace HarkkaASP
         public List<Resource> GetResources()
         {
             return res;
+        }
+
+        public Resource GetResource(String name)
+        {
+            foreach (Resource r in res)
+            {
+                if (r.name == name)
+                {
+                    return r;
+                }
+            }
+            return null;
         }
 
         public List<Resource> GetAvailableResources()
