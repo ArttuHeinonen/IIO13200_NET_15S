@@ -35,7 +35,7 @@ namespace HarkkaASP
                 }
             }
         }
-        public void IncrementResource(string name, float inc)
+        public void IncrementResource(string name)
         {
             foreach (Resource r in res)
             {

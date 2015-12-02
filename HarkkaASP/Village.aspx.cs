@@ -38,6 +38,12 @@ public partial class Village : System.Web.UI.Page
         }
     }
 
+    private void SaveSessionVariables()
+    {
+        Session["Resource"] = res;
+        Session["Building"] = building;
+    }
+
     protected void gatherFood_Click(object sender, EventArgs e)
     {
         IncrementResource("Food", 1);
@@ -51,7 +57,7 @@ public partial class Village : System.Web.UI.Page
     private void IncrementResource(string resource, float value)
     {
         LoadSessionResources();
-        res.IncrementResource(resource, value);
+        res.AddResource(resource, value);
         Session["Resource"] = res;
     }
 

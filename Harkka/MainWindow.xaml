@@ -5,67 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Harkka"
         mc:Ignorable="d"
-        Title="Tribal game" Height="483.447" Width="766.206" FontSize="12">
-    <Grid Background="#FF201F1D">
-        <GridSplitter x:Name="gridSplitter" HorizontalAlignment="Left" Height="453" Margin="306,0,0,0" VerticalAlignment="Top" Width="7" Background="#FF3A3835" IsEnabled="False"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" HeadersVisibility="None" VerticalAlignment="Top" Foreground="Red" Background="#FF201F1D" BorderBrush="#FF201F1D" RowBackground="#FF201F1D"  IsEnabled="False" FontSize="13.333" />
-        <StackPanel Height="320" VerticalAlignment="Top" Width="440" HorizontalAlignment="Right">
-            <TabControl x:Name="tabControl" Height="451" Background="#FF201F1D" BorderBrush="#FF201F1D">
-                <TabControl.Resources>
-                    <Style TargetType="TabItem">
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="TabItem">
-                                    <Border Name="Border" BorderThickness="1,1,1,0" BorderBrush="#FFE69116" Margin="2,0">
-                                        <ContentPresenter x:Name="ContentSite" VerticalAlignment="Center" HorizontalAlignment="Center" ContentSource="Header" Margin="10,2" />
-                                    </Border>
-                                    <ControlTemplate.Triggers>
-                                        <Trigger Property="IsSelected" Value="True">
-                                            <Setter TargetName="Border" Property="Background" Value="#FF726F68"/>
-                                        </Trigger>
-                                        <Trigger Property="IsSelected" Value="False">
-                                            <Setter TargetName="Border" Property="Background" Value="#FF2E2E2E"/>
-                                        </Trigger>
-                                    </ControlTemplate.Triggers>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </TabControl.Resources>
-                <TabItem Header="Camp" Foreground="White">
-                    <Grid Background="#FF201F1D" Margin="0,0,-6,-8">
-                        <Button x:Name="buttonHarvest" Content="Harvest" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="33" Click="buttonHarvest_Click" Background="#FF686565" BorderBrush="#FFBD9833" Foreground="White"/>
-                        <Button x:Name="buttonHut" Content="Hut" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="33" Click="buttonHut_Click" Margin="140,0,0,0" BorderBrush="#FFBD9833" Background="#FF686565" IsEnabled="False" Foreground="White"/>
-                    </Grid>
-                </TabItem>
-                <TabItem Header="Tribe" Foreground="White">
-                    <Grid Background="#FF201F1D">
-                        <Label x:Name="Thinkerlbl" Content="Thinkers" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top" Foreground="White"/>
-                        <Button x:Name="buttonThinkerPlus" Content="+" HorizontalAlignment="Left" Margin="174,71,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="#FF686565" BorderBrush="#FFBD9833" Foreground="#FF117E00" FontWeight="Bold" FontSize="16"/>
-                        <Button x:Name="buttonThinkerMinus" Content="-" HorizontalAlignment="Left" Margin="211,71,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="#FF686565" BorderBrush="#FFBD9833" Foreground="#FF7E0006" FontWeight="Bold" FontSize="16"/>
-                        <Label x:Name="ThinkerNumlbl" Content="0" HorizontalAlignment="Left" Margin="121,74,0,0" VerticalAlignment="Top" Foreground="White"/>
-                        <Label x:Name="WoodCutterlbl" Content="Woodcutters" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Foreground="White"/>
-                        <Label x:Name="WoodcutterNumlbl" Content="0" HorizontalAlignment="Left" Margin="121,105,0,0" VerticalAlignment="Top" Foreground="White"/>
-                        <Button x:Name="buttonWoodcutterPlus" Content="+" HorizontalAlignment="Left" Margin="174,105,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="#FF686565" BorderBrush="#FFBD9833" Foreground="#FF117E00" FontWeight="Bold" FontSize="16"/>
-                        <Button x:Name="buttonWoodcutterMinus" Content="-" HorizontalAlignment="Left" Margin="211,105,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="#FF686565" BorderBrush="#FFBD9833" Foreground="#FF7E0006" FontWeight="Bold" FontSize="16"/>
-                        <Label x:Name="Shamanlbl" Content="Shamans" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Foreground="White"/>
-                        <Label x:Name="ShamanNumlbl" Content="0" HorizontalAlignment="Left" Margin="121,142,0,0" VerticalAlignment="Top" Foreground="White"/>
-                        <Button x:Name="buttonShamanPlus" Content="+" HorizontalAlignment="Left" Margin="174,142,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="#FF686565" BorderBrush="#FFBD9833" Foreground="#FF117E00" FontWeight="Bold" FontSize="16"/>
-                        <Button x:Name="buttonShamanMinus" Content="-" HorizontalAlignment="Left" Margin="211,142,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="#FF686565" BorderBrush="#FFBD9833" Foreground="#FF7E0006" FontWeight="Bold" FontSize="16"/>
-                        <Label x:Name="Ilderslbl" Content="Idling villagers" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White"/>
-                        <Label x:Name="IdlersNumlbl" Content="0" HorizontalAlignment="Left" Margin="121,10,0,0" VerticalAlignment="Top" Foreground="White"/>
-                    </Grid>
-                </TabItem>
-                <TabItem Header="Science" Foreground="White">
-                    <Grid Background="#FF201F1D" Margin="0,0,0,0">
-                    </Grid>
-                </TabItem>
-                <TabItem Header="Religion" Foreground="White">
-                    <Grid Background="#FF201F1D" Margin="0,0,0,0">
-                    </Grid>
-                </TabItem>
-            </TabControl>
-        </StackPanel>
-
+        Title="Tribal game" Height="504.808" Width="880.577">
+    <Grid>
+        <GridSplitter x:Name="gridSplitter" HorizontalAlignment="Left" Height="470" Margin="397,0,0,0" VerticalAlignment="Top" Width="9"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" VerticalAlignment="Top" IsEnabled="False" Height="290" Width="397" FontSize="13.333" HeadersVisibility="None" />
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="470" Margin="406,0,0,0" VerticalAlignment="Top" Width="467" FontSize="13.333">
+            <TabItem Header="Village">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="buttonHarvest" Content="Collect wood" Margin="0,0,232,400" Click="buttonHarvest_Click"/>
+                    <Button x:Name="buttonHunt" Content="Hunt" Margin="225,0,0,400" Click="buttonHunt_Click"/>
+                    <Button x:Name="buttonHut" Content="Hut (0)" Margin="0,36,232,364" Click="buttonHut_Click" MouseEnter="buttonHut_MouseEnter"/>
+                    <Button x:Name="buttonTrap" Content="Trap (0)" Margin="225,36,0,364" Click="buttonTrap_Click" MouseEnter="buttonTrap_MouseEnter" />
+                    <Button x:Name="buttonShrine" Content="Shrine (0)" Margin="0,72,232,328" Click="buttonShrine_Click" MouseEnter="buttonShrine_MouseEnter"/>
+                    <Button x:Name="buttonMine" Content="Mine (0)" Margin="225,72,0,328" Click="buttonMine_Click" MouseEnter="buttonMine_MouseEnter" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Population">
+                <Grid Background="#FFE5E5E5">
+                    <Label x:Name="labelThinker" Content="Thinker (1)" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <Label x:Name="labelWoodcutter" Content="Woodcutter (0)" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <Button x:Name="buttonWoodcutterPlus" Content="+" Click="buttonWoodcutterPlus_Click" HorizontalAlignment="Left" Margin="168,43,0,0" VerticalAlignment="Top" Width="32" Height="32"  FontWeight="Bold" FontSize="16"/>
+                    <Button x:Name="buttonWoodcutterMinus" Content="-" Click="buttonWoodcutterMinus_Click" HorizontalAlignment="Left" Margin="205,43,0,0" VerticalAlignment="Top" Width="32" Height="32" FontWeight="Bold" FontSize="16"/>
+                    <Label x:Name="labelForager" Content="Forager (0)" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <Button x:Name="buttonForagerPlus" Content="+" Click="buttonForagerPlus_Click" HorizontalAlignment="Left" Margin="168,80,0,0" VerticalAlignment="Top" Width="32" Height="32"  FontWeight="Bold" FontSize="16"/>
+                    <Button x:Name="buttonForagerMinus" Content="-" Click="buttonForagerMinus_Click" HorizontalAlignment="Left" Margin="205,80,0,0" VerticalAlignment="Top" Width="32" Height="32" FontWeight="Bold" FontSize="16"/>
+                    <Label x:Name="labelMiner" Content="Miner (0)" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <Button x:Name="buttonMinerPlus" Content="+" Click="buttonMinerPlus_Click" HorizontalAlignment="Left" Margin="168,117,0,0" VerticalAlignment="Top" Width="32" Height="32"  FontWeight="Bold" FontSize="16"/>
+                    <Button x:Name="buttonMinerMinus" Content="-" Click="buttonMinerMinus_Click" HorizontalAlignment="Left" Margin="205,117,0,0" VerticalAlignment="Top" Width="32" Height="32" FontWeight="Bold" FontSize="16"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Science">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Options">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="buttonSave" Content="Save" Margin="0,0,232,400" Click="buttonSave_Click"/>
+                    <Button x:Name="buttonReset" Content="Reset" Margin="225,0,0,400" Click="buttonReset_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Label x:Name="labelToolTip" HorizontalAlignment="Left" Margin="10,295,0,0" VerticalAlignment="Top" FontSize="13.333" />
     </Grid>
 </Window>

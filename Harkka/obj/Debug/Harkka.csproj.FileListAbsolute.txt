@@ -1,6 +1,7 @@
 D:\dev\IIO13200_NET_15S\Harkka\bin\Debug\Harkka.exe.config
 D:\dev\IIO13200_NET_15S\Harkka\bin\Debug\Harkka.exe
 D:\dev\IIO13200_NET_15S\Harkka\bin\Debug\Harkka.pdb
+D:\dev\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.csprojResolveAssemblyReference.cache
 D:\dev\IIO13200_NET_15S\Harkka\obj\Debug\MainWindow.g.cs
 D:\dev\IIO13200_NET_15S\Harkka\obj\Debug\App.g.cs
 D:\dev\IIO13200_NET_15S\Harkka\obj\Debug\Harkka_MarkupCompile.cache
@@ -11,18 +12,3 @@ D:\dev\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.Properties.Resources.resources
 D:\dev\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.csproj.GenerateResource.Cache
 D:\dev\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.exe
 D:\dev\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.pdb
-D:\dev\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.csprojResolveAssemblyReference.cache
-D:\H3425\IIO13200_NET_15S\Harkka\bin\Debug\Harkka.exe.config
-D:\H3425\IIO13200_NET_15S\Harkka\bin\Debug\Harkka.exe
-D:\H3425\IIO13200_NET_15S\Harkka\bin\Debug\Harkka.pdb
-D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\MainWindow.g.cs
-D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\App.g.cs
-D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\Harkka_MarkupCompile.cache
-D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\Harkka_MarkupCompile.lref
-D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\MainWindow.baml
-D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.g.resources
-D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.Properties.Resources.resources
-D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.csproj.GenerateResource.Cache
-D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.exe
-D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.pdb
-D:\H3425\IIO13200_NET_15S\Harkka\obj\Debug\Harkka.csprojResolveAssemblyReference.cache

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{621FEF70-4B23-44CE-8D2C-39905471E43F}</ProjectGuid>
+    <ProjectGuid>{0B0BC053-1734-4258-962B-800345E660ED}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Harkka</RootNamespace>
@@ -37,8 +37,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -57,12 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BLBonus.cs" />
     <Compile Include="BLBuilding.cs" />
+    <Compile Include="BLPopulation.cs" />
     <Compile Include="BLResource.cs" />
+    <Compile Include="Bonus.cs" />
     <Compile Include="Building.cs" />
-    <Compile Include="CustomButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Population.cs" />
     <Compile Include="Resource.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

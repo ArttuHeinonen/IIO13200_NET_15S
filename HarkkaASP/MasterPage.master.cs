@@ -50,14 +50,14 @@ public partial class MasterPage : System.Web.UI.MasterPage
         Session["Day"] = days;
     }
 
-    private void LoadSessionVariables()
+    public void LoadSessionVariables()
     {
         LoadSessionResources();
         LoadSessionDays();
         label1.Text = days.ToString();
     }
 
-    private void LoadSessionResources()
+    public void LoadSessionResources()
     {
         if (Session["Resource"] != null)
         {
@@ -65,7 +65,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
         }
     }
 
-    private void LoadSessionDays()
+    public void LoadSessionDays()
     {
         if (Session["Day"] != null)
         {
