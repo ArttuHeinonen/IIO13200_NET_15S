@@ -14,6 +14,7 @@ namespace HarkkaASP
 
         public BLBuilding()
         {
+            InitializeBuildingRequirements();
             CreateBuilding("Hut", hutReq);
             CreateBuilding("Hunt copse", outpostReq);
         }
@@ -75,7 +76,7 @@ namespace HarkkaASP
 
             foreach (ReqResource req in building.requirements)
             {
-                if(!(req.value >= resources.GetResource(req.resName).value))
+                if(req.value > resources.GetResource(req.resName).value)
                 {
                     return false;
                 }

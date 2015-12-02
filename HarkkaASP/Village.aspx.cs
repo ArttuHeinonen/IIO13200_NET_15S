@@ -32,7 +32,7 @@ public partial class Village : System.Web.UI.Page
 
     private void LoadSessionBuildings()
     {
-        if(Session["Buildings"] != null)
+        if(Session["Building"] != null)
         {
             building = (BLBuilding)Session["Buildings"];
         }
@@ -63,10 +63,12 @@ public partial class Village : System.Web.UI.Page
 
     public void BuyBuilding(String buildingName)
     {
+        LoadSessionResources();
         if (building.IsRequirementsMetForBuilding(buildingName, res))
         {
             res = building.BuyBuilding(buildingName, res);
             Session["Resource"] = res;
+            Session["Building"] = building;
         }
     }
 
