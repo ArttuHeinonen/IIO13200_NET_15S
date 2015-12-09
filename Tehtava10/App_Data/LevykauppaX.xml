@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Records>
+  <genre name="Pop">
+    <record ISBN="Johanna2012" Artist="Johanna Kurkela" Title="Suden morsian" Price="18.95">
+      <song num="1" name="Valoihminen">
+        Tuolla puu josta linnut ovat tippuneet
+      </song>
+      <song num="2" name="Sudelle morsian">
+        Lyrics...
+      </song>
+      <song num="5" name="Kaikki askeleet">
+        Hei tippaukot hyppikaa
+      </song>
+    </record>
+    <record ISBN="Anna2009" Artist="Anna Puu" Title="Anna Puu" Price="9.99">
+      <song num="1" name="Linnuton puu">
+        Tuolla puu josta linnut ovat tippuneet
+      </song>
+      <song num="2" name="Cest la vie">
+        Lyrics...
+      </song>
+      <song num="3" name="Melankolian riemut">
+        Hei tippaukot hyppikaa
+      </song>
+    </record>
+    <record ISBN="Anna2010"  Artist="Anna Puu" Title="Sahara" Price="11.99">
+      <song num="1" name="Riko minu">
+        Lyrics...
+      </song>
+      <song num="2" name="Anna ja merikarhu">
+        Lyrics...
+      </song>
+      <song num="3" name="Nopeimmat junat">
+        Lyrics...
+      </song>
+    </record>
+    <record ISBN="Anna2012" Artist="Anna Puu" Title="Antaudun" Price="19.99">
+      <song num="1" name="Antaudun">
+        Lyrics...
+      </song>
+      <song num="2" name="Pimeys peittoaa maan">
+        Those wew the days...
+      </song>
+      <song num="3" name="Kolme pikku sanaa">
+        Lyrics...
+      </song>
+    </record>
+    <record ISBN="Laura2012" Artist="Laura Narhi" Title="Tuhlari" Price="19.99">
+      <song num="1" name="Tuhlari">
+        Kaikki ment...
+      </song>
+      <song num="2" name="Siskoni feat Erin">
+        Those were the days...
+      </song>
+      <song num="3" name="Hetken tie on kevyt">
+        Lyrics...
+      </song>
+    </record>
+  </genre>
+</Records>
