@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<palautteet>
+  <palaute>
+    <pvm>10.12.2015</pvm>
+    <tekija>Kalle Kiekkonen</tekija>
+    <kurssi>IIO12300</kurssi>
+    <opittu>Jääkiekkoa</opittu>
+    <haluanoppia>Jalkapalloa</haluanoppia>
+    <hyvaa>Urheilu</hyvaa>
+    <parannettavaa>Ei urheilu</parannettavaa>
+    <muuta>Ei muuta</muuta>
+  </palaute>
+  <palaute>
+    <pvm>10.12.2015</pvm>
+    <tekija>Jaakko</tekija>
+    <kurssi>IIO14</kurssi>
+    <opittu>Suuria asioita</opittu>
+    <haluanoppia>Sekavia asioita</haluanoppia>
+    <hyvaa>Miedot asiat</hyvaa>
+    <parannettavaa>Kylmät asiat</parannettavaa>
+    <muuta>Asioita</muuta>
+  </palaute>
+  <palaute>
+    <pvm>10.12.2015</pvm>
+    <tekija>Arttu</tekija>
+    <kurssi>IIO13</kurssi>
+    <opittu>Mahtavia asioita</opittu>
+    <haluanoppia>Mukavia asioita</haluanoppia>
+    <hyvaa>Kivat asiat</hyvaa>
+    <parannettavaa>Huonot asiat</parannettavaa>
+    <muuta>Asioita</muuta>
+  </palaute>
+  <palaute>
+    <pvm>10.12.2015</pvm>
+    <tekija>Arttu</tekija>
+    <kurssi>IIO13</kurssi>
+    <opittu>Mahtavia asioita</opittu>
+    <haluanoppia>Mukavia asioita</haluanoppia>
+    <hyvaa>Kivat asiat</hyvaa>
+    <parannettavaa>Huonot asiat</parannettavaa>
+    <muuta>Asioita</muuta>
+  </palaute>
+</palautteet>
